@@ -17,7 +17,8 @@ const Page = ({ image }) => {
 
           .invisible {
             width: 100%;
-            paddingbottom: 55%;
+            padding-bottom: ${(image.dimensions.height * 100) /
+              image.dimensions.width}%;
           }
 
           img {
